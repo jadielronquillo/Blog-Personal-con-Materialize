@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog personal de Jadiel Arisai Ronquillo Valenzuela.">
+  <title>Jadiel Ronquillo | Blog personal</title>
+
+  <!-- Materialize CSS y Material Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-wrapper container">
+      <a href="#inicio" class="brand-logo">Jadiel<span>.</span></a>
+      <a href="#" data-target="menu-movil" class="sidenav-trigger" aria-label="Abrir menú">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#publicaciones">Publicaciones</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="menu-movil">
+    <li><div class="user-view sidenav-header"><span class="white-text name">Jadiel Ronquillo</span><span class="white-text email">Blog personal</span></div></li>
+    <li><a href="#inicio"><i class="material-icons">home</i>Inicio</a></li>
+    <li><a href="#publicaciones"><i class="material-icons">article</i>Publicaciones</a></li>
+    <li><a href="#sobre-mi"><i class="material-icons">person</i>Sobre mí</a></li>
+    <li><a href="#contacto"><i class="material-icons">mail</i>Contacto</a></li>
+  </ul>
+
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="status-dot"></span> MI ESPACIO PERSONAL</span>
+          <h1>Hola, soy <span>Jadiel.</span></h1>
+          <p class="hero-lead">Un poco de mi vida, mis gustos y las cosas nuevas que voy aprendiendo.</p>
+          <p class="bio-short">Soy de Navojoa, Sonora. Disfruto descansar, jugar, leer y descubrir temas interesantes. En este blog comparto ideas, experiencias y pequeños aprendizajes de mi día a día.</p>
+          <div class="hero-actions">
+            <a href="#publicaciones" class="btn-large primary-btn">Ver publicaciones <i class="material-icons right">arrow_forward</i></a>
+            <a href="#sobre-mi" class="text-link">Conóceme mejor</a>
+          </div>
+          <div class="hero-meta"><i class="material-icons">location_on</i> Navojoa, Sonora, México <span>·</span> Blog personal</div>
+        </div>
+        <div class="hero-art">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="avatar-card">
+            <div class="avatar-circle" role="img" aria-label="Avatar ilustrado de una persona"><span class="avatar-hair"></span><span class="avatar-face"><span class="avatar-eye left"></span><span class="avatar-eye right"></span><span class="avatar-smile"></span></span><span class="avatar-neck"></span><span class="avatar-shirt"></span></div>
+            <div class="avatar-caption"><span class="caption-icon"><i class="material-icons">waving_hand</i></span><div><strong>¡Qué gusto verte!</strong><small>Bienvenido a mi blog</small></div></div>
+          </div>
+          <span class="floating-chip chip-book"><i class="material-icons">menu_book</i> Leer</span>
+          <span class="floating-chip chip-game"><i class="material-icons">sports_esports</i> Jugar</span>
+          <span class="decor decor-star">✳</span><span class="decor decor-plus">+</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="interest-strip">
+      <div class="container interest-inner">
+        <span class="strip-label">EN MI TIEMPO LIBRE</span>
+        <div class="interest-item"><i class="material-icons">bedtime</i> Descansar</div>
+        <div class="interest-item"><i class="material-icons">sports_esports</i> Videojuegos</div>
+        <div class="interest-item"><i class="material-icons">menu_book</i> Leer</div>
+        <div class="interest-item"><i class="material-icons">lightbulb</i> Aprender tecnología</div>
+      </div>
+    </section>
+
+    <section id="publicaciones" class="section-block">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">IDEAS Y EXPERIENCIAS</span><h2>Mis publicaciones<span>.</span></h2></div>
+          <p>Cuatro temas que me gustan y que también forman parte de lo que voy aprendiendo.</p>
+        </div>
+        <div class="row articles-grid" id="lista-articulos"></div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="about-section section-block">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">UN POCO MÁS DE MÍ</span><h2>Sobre mí<span>.</span></h2></div>
+          <p>Mi historia, mis intereses y las metas que quiero alcanzar poco a poco.</p>
+        </div>
+        <div class="row about-grid">
+          <div class="col s12 l7">
+            <div class="about-panel">
+              <div class="panel-icon"><i class="material-icons">person_outline</i></div>
+              <h3>Mi historia</h3>
+              <p>Mi nombre es Jadiel Arisai Ronquillo Valenzuela y nací en Navojoa, Sonora, México. Soy el menor de cuatro hermanos. Mi papá es Jesús Abdiel Ronquillo Valdez y mi mamá es Rosa Amalia Valenzuela Estrella. Mis hermanos son Heldai, Jesús y Jeriel Ronquillo Valenzuela.</p>
+              <p>Mi familia es una parte importante de mi vida y de la persona que soy. Me considero alguien que todavía tiene mucho por aprender y que quiere seguir creciendo tanto en lo personal como en lo académico. En mis ratos libres me gusta descansar, jugar y leer; también me interesa conocer cosas nuevas sobre tecnología y computación.</p>
+              <p>Este blog es un espacio para expresarme, compartir mis intereses y guardar algunas ideas sobre temas que me llaman la atención. Mi intención es seguir aprendiendo, mejorar mis habilidades y disfrutar el proceso sin dejar de lado a las personas que son importantes para mí.</p>
+            </div>
+          </div>
+          <div class="col s12 l5">
+            <div class="about-panel goals-panel">
+              <div class="panel-icon"><i class="material-icons">flag</i></div>
+              <h3>Mis objetivos</h3>
+              <ul class="goal-list">
+                <li><i class="material-icons">check_circle</i><span>Seguir aprendiendo programación y desarrollo web.</span></li>
+                <li><i class="material-icons">check_circle</i><span>Crear proyectos que funcionen y tengan un diseño atractivo.</span></li>
+                <li><i class="material-icons">check_circle</i><span>Organizar mejor mi tiempo entre el estudio y el descanso.</span></li>
+                <li><i class="material-icons">check_circle</i><span>Desarrollar nuevas habilidades y terminar mis proyectos escolares.</span></li>
+              </ul>
+              <h4>Habilidades e intereses</h4>
+              <div class="chips-wrap">
+                <div class="chip">HTML</div><div class="chip">CSS</div><div class="chip">JavaScript</div><div class="chip">Tecnología</div><div class="chip">Lectura</div><div class="chip">Videojuegos</div><div class="chip">Creatividad</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact-section section-block">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-intro">
+            <span class="eyebrow">HABLEMOS</span>
+            <h2>¿Tienes algo que compartir<span>?</span></h2>
+            <p>Si quieres dejar un comentario, una idea o simplemente saludar, puedes usar este formulario.</p>
+            <div class="contact-detail"><i class="material-icons">email</i><a href="mailto:jadielronquillo5@gmail.com">jadielronquillo5@gmail.com</a></div>
+            <div class="contact-detail"><i class="material-icons">phone</i><a href="tel:6424830348">642 483 0348</a></div>
+            <div class="contact-detail"><i class="material-icons">place</i><span>Navojoa, Sonora</span></div>
+          </div>
+          <div class="contact-form-wrap">
+            <h3>Envíame un mensaje</h3>
+            <form id="formulario">
+              <div class="input-field"><i class="material-icons prefix">account_circle</i><input id="nombre" name="nombre" type="text" minlength="2" required><label for="nombre">Tu nombre</label></div>
+              <div class="input-field"><i class="material-icons prefix">mail_outline</i><input id="correo" name="correo" type="email" required><label for="correo">Correo electrónico</label></div>
+              <div class="input-field"><i class="material-icons prefix">chat_bubble_outline</i><textarea id="mensaje" name="mensaje" class="materialize-textarea" minlength="5" required></textarea><label for="mensaje">Escribe tu mensaje</label></div>
+              <button class="btn-large primary-btn submit-btn" type="submit">Validar mensaje <i class="material-icons right">send</i></button>
+              <p class="form-note">Este formulario es una demostración: valida los datos, pero no envía correos.</p>
+            </form>
+          </div>
+        </div>
+        <div class="family-note"><i class="material-icons">family_restroom</i><span><strong>Mi familia:</strong> Jesús Abdiel Ronquillo Valdez y Rosa Amalia Valenzuela Estrella.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer custom-footer">
+    <div class="container footer-main">
+      <div><a href="#inicio" class="footer-logo">Jadiel<span>.</span></a><p>Un espacio personal para compartir ideas, intereses y aprendizajes.</p></div>
+      <div class="footer-links"><a href="#inicio">Inicio</a><a href="#publicaciones">Publicaciones</a><a href="#sobre-mi">Sobre mí</a><a href="#contacto">Contacto</a></div>
+      <div class="footer-contact"><a href="mailto:jadielronquillo5@gmail.com"><i class="material-icons">email</i> jadielronquillo5@gmail.com</a><a href="tel:6424830348"><i class="material-icons">phone</i> 642 483 0348</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container">© <span id="year"></span> Jadiel Arisai Ronquillo Valenzuela. Todos los derechos reservados.<a href="#inicio" class="back-top">Volver al inicio ↑</a></div></div>
+  </footer>
+
+  <!-- Modal de contenido completo de cada publicación -->
+  <div id="modal-articulo" class="modal modal-fixed-footer">
+    <div class="modal-content"><button class="modal-close modal-x" aria-label="Cerrar"><i class="material-icons">close</i></button><span class="eyebrow" id="modal-categoria"></span><h3 id="modal-titulo"></h3><p class="modal-date" id="modal-fecha"></p><div id="modal-contenido" class="article-full-content"></div></div>
+    <div class="modal-footer"><a href="#!" class="modal-close btn-flat">Cerrar artículo</a></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
